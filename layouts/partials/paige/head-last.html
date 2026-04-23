@@ -1,0 +1,127 @@
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'RIDIBatang';
+    src: url('/fonts/RIDIBatang.woff2') format('woff2'),
+        url('/fonts/RIDIBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;   
+}
+    
+.font-ridibatang {
+    font-family: 'RIDIBatang', 'Nanum Myeongjo', 'Noto Serif KR', 'Apple SD Gothic Neo', 'Malgun Gothic', serif;
+}
+
+#paige-site-title,
+#paige-site-title a {
+    font-family: 'Noto Sans KR', sans-serif !important;
+    font-size: 2.5rem !important;
+    font-weight: 700 !important;
+    color: #3b4252 !important;
+    text-align: left !important;
+}
+
+#paige-site-description {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    font-family: 'RIDIBatang', 'Nanum Myeongjo', 'Noto Serif KR', 'Apple SD Gothic Neo', 'Malgun Gothic', serif !important;
+    font-size: 1.1rem !important;
+    color: #3b4252 !important;
+    text-align: left !important;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.5rem !important;
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(.5 * var(--bs-gutter-x));
+}
+
+#paige-site-menu .nav {
+    justify-content: flex-end !important;
+    font-family: 'Noto Sans KR', sans-serif !important;
+}
+
+#paige-site-menu .nav-item:has(a[href="/categories/"]) {
+    display: none !important;
+}
+
+#paige-page.paige-kind-section {
+    align-items: stretch !important;
+}
+
+#paige-page-header {
+    text-align: left !important;
+}
+
+#paige-page-title {
+    font-family: 'Noto Sans KR', serif !important;
+    font-size: 1.4rem !important;
+    font-weight: 700 !important;
+    text-align: left !important;
+    border-left: 4px solid #3b4252 !important;
+    padding-left: 1rem !important;
+    margin: 2rem 0 1.5rem !important;
+}
+
+#paige-page-pages div{
+    text-align: left !important;
+    padding-left: 1.2rem !important;
+}
+
+html, body { 
+    margin: 0;
+}
+
+#paige-site {
+    display: flex !important;
+    flex-direction: column !important;
+    min-height: calc(100vh - 1rem) !important;
+}
+
+#paige-site-footer {
+    margin-top: auto !important;
+}
+
+#paige-site-copyright {
+    text-align: left !important;
+}
+
+.paige-custom-card {
+    border-bottom: 1px solid var(--bs-border-color);
+    transition: background-color 0.2s ease;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.paige-custom-card:first-child {
+    border-top: 1px solid var(--bs-border-color);
+}
+
+.paige-custom-card:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.paige-custom-card .paige-page-title a {
+    transition: color 0.2s ease;
+}
+
+.paige-custom-card .paige-page-title a:hover {
+    color: hsl(0, 96%, 49%) !important;
+}
+
+.paige-custom-card img {
+    transition: transform 0.3s ease;
+}
+
+.paige-custom-card img:hover {
+    transform: scale(1.02);
+}
+
+.paige-custom-card {
+    text-align: left !important;
+}
+
+</style>

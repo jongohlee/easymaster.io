@@ -1,0 +1,85 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+
+        
+            
+        
+    
+
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<rss version="2.0"  xml:lang="ko"  xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        
+            <copyright>EASYMASTER. All rights reserved.</copyright>
+        
+
+        
+            <description>출간 예정 책들</description>
+        
+
+        
+            <language>ko</language>
+        
+
+        
+            <lastBuildDate>Mon, 01 Jan 0001 00:00:00 UTC</lastBuildDate>
+        
+
+        
+            <link>//localhost:1313/working/</link>
+        
+
+        
+            <atom:link href="//localhost:1313/working/rss.xml" hreflang="ko" rel="self" type="application/rss+xml"/>
+        
+
+        
+            
+
+            <atom:link href="//localhost:1313/working/" hreflang="ko" rel="alternate" type="text/html"/>
+        
+            
+
+            <atom:link href="//localhost:1313/working/rss.xml" hreflang="ko" rel="alternate" type="application/rss+xml"/>
+        
+
+        
+
+        
+
+        
+            <title>출간 예정작 · 이지마스터</title>
+        
+
+        
+
+        
+    </channel>
+</rss>

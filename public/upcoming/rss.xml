@@ -1,0 +1,203 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+
+        
+            
+        
+    
+
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<rss version="2.0"  xml:lang="ko"  xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        
+            <copyright>EASYMASTER. All rights reserved.</copyright>
+        
+
+        
+            <description>출간 예정 책들</description>
+        
+
+        
+            <language>ko</language>
+        
+
+        
+            <lastBuildDate>Sat, 01 Aug 2026 00:00:00 KST</lastBuildDate>
+        
+
+        
+            <link>//localhost:1313/upcoming/</link>
+        
+
+        
+            <atom:link href="//localhost:1313/upcoming/rss.xml" hreflang="ko" rel="self" type="application/rss+xml"/>
+        
+
+        
+            
+
+            <atom:link href="//localhost:1313/upcoming/" hreflang="ko" rel="alternate" type="text/html"/>
+        
+            
+
+            <atom:link href="//localhost:1313/upcoming/rss.xml" hreflang="ko" rel="alternate" type="application/rss+xml"/>
+        
+
+        
+
+        
+
+        
+            <title>출간예정 · 이지마스터</title>
+        
+
+        
+
+        
+            
+                <item>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                    
+                    
+
+                    
+
+                    
+                        <description><![CDATA[<p>This page has the following parameters:</p><p>paige:
+alert:
+message: &ldquo;Get more information &lt;a href="#" class="alert-link">here</a>.&rdquo;
+type: &ldquo;primary</p>]]></description>
+                    
+
+                    
+                        <guid isPermaLink="false">tag:localhost:1313,2026-08-01:/upcoming/dog_eat_dog/</guid>
+                    
+
+                    
+                        <link>//localhost:1313/upcoming/dog_eat_dog/</link>
+                    
+
+                    
+                        
+
+                        
+
+                        <atom:link href="//localhost:1313/upcoming/dog_eat_dog/" hreflang="ko" rel="alternate" type="text/html"/>
+                    
+
+                    
+
+                    
+                        <pubDate>Sat, 01 Aug 2026 00:00:00 KST</pubDate>
+                    
+
+                    
+                        <title>Dog Eat Dog</title>
+                    
+                </item>
+            
+        
+            
+                <item>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                    
+                    
+
+                    
+
+                    
+                        <description><![CDATA[<p>This page has the following parameters:</p><p>paige:
+alert:
+message: &ldquo;Get more information &lt;a href="#" class="alert-link">here</a>.&rdquo;
+type: &ldquo;primary</p>]]></description>
+                    
+
+                    
+                        <guid isPermaLink="false">tag:localhost:1313,2026-08-01:/upcoming/postdrama/</guid>
+                    
+
+                    
+                        <link>//localhost:1313/upcoming/postdrama/</link>
+                    
+
+                    
+                        
+
+                        
+
+                        <atom:link href="//localhost:1313/upcoming/postdrama/" hreflang="ko" rel="alternate" type="text/html"/>
+                    
+
+                    
+
+                    
+                        <pubDate>Sat, 01 Aug 2026 00:00:00 KST</pubDate>
+                    
+
+                    
+                        <title>포스트드라마 연극</title>
+                    
+                </item>
+            
+        
+    </channel>
+</rss>
