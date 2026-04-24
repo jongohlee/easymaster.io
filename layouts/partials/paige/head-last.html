@@ -58,10 +58,9 @@
 
 #paige-page-title {
     font-family: 'Noto Sans KR', serif !important;
-    font-size: 1.4rem !important;
+    font-size: 2.4rem !important;
     font-weight: 700 !important;
     text-align: left !important;
-    border-left: 4px solid #3b4252 !important;
     padding-left: 1rem !important;
     margin: 2rem 0 1.5rem !important;
 }
@@ -83,6 +82,21 @@ html, body {
 
 #paige-site-footer {
     margin-top: auto !important;
+    background-color: #3b4252 !important;
+    border-top: 3px solid #4c566a !important;
+    padding: 0.4rem 0.2rem 0.2rem 1.2rem !important;
+    margin-left: -0.25rem !important;
+    margin-right: -0.25rem !important;
+}
+
+#paige-site-footer p,
+#paige-site-footer a {
+    color: #d8dee9 !important;
+}
+
+#paige-site-footer a:hover {
+    color: #eceff4 !important;
+    text-decoration: underline !important;
 }
 
 #paige-site-copyright {
@@ -90,7 +104,6 @@ html, body {
 }
 
 .paige-custom-card {
-    border-bottom: 1px solid var(--bs-border-color);
     transition: background-color 0.2s ease;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -122,6 +135,337 @@ html, body {
 
 .paige-custom-card {
     text-align: left !important;
+}
+
+/* ============================================
+   본문 컨테이너 전체 설정
+   ============================================ */
+#paige-page-content {
+    font-family: 'RIDIBatang', 'Nanum Myeongjo', 'Noto Serif KR', 'Apple SD Gothic Neo', 'Malgun Gothic', serif;
+    font-size: 1.05rem !important;
+    line-height: 1.9 !important;
+    color: #2d3748 !important;
+    max-width: 42rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+    padding-bottom: 4rem !important;
+    word-break: keep-all;  /* 한글 단어 단위 줄바꿈 */
+    word-wrap: break-word;
+}
+
+/* ============================================
+   제목 (h1 ~ h6)
+   ============================================ */
+#paige-page-content h1,
+#paige-page-content h2,
+#paige-page-content h3,
+#paige-page-content h4,
+#paige-page-content h5,
+#paige-page-content h6 {
+    font-family: 'Noto Sans KR', sans-serif !important;
+    font-weight: 700 !important;
+    color: #1a202c !important;
+    letter-spacing: -0.02em !important;
+    line-height: 1.4 !important;
+    
+    /* 모든 테두리 완전 제거 */
+    border: none !important;
+    border-top: none !important;
+    border-right: none !important;
+    
+    /* 모든 패딩 제거 */
+    padding: 0 !important;
+    padding-top: 0 !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    
+    /* 텍스트 장식 제거 */
+    text-decoration: none !important;
+    background: none !important;
+    box-shadow: none !important;
+}
+
+#paige-page-content h1 {
+    font-size: 1.8rem !important;
+    margin-top: 3rem !important;
+    margin-bottom: 1.5rem !important;
+}
+
+#paige-page-content h2 {
+    font-size: 1.4rem !important;
+    margin-top: 2.5rem !important;
+    margin-bottom: 1rem !important;
+}
+
+#paige-page-content h3 {
+    font-size: 1.2rem !important;
+    margin-top: 2rem !important;
+    margin-bottom: 0.75rem !important;
+}
+
+#paige-page-content h4 {
+    font-size: 1.1rem !important;
+    margin-top: 1.75rem !important;
+    margin-bottom: 0.5rem !important;
+    color: #4a5568 !important;
+}
+
+/* 제목 내부의 링크는 스타일 제거 */
+#paige-page-content h1 a,
+#paige-page-content h2 a,
+#paige-page-content h3 a,
+#paige-page-content h4 a,
+#paige-page-content h5 a,
+#paige-page-content h6 a {
+    color: inherit !important;
+    text-decoration: none !important;
+    border: none !important;
+    background: none !important;
+}
+
+/* 호버 시에도 밑줄 없음 */
+#paige-page-content h1 a:hover,
+#paige-page-content h2 a:hover,
+#paige-page-content h3 a:hover,
+#paige-page-content h4 a:hover,
+#paige-page-content h5 a:hover,
+#paige-page-content h6 a:hover {
+    color: #4a5568 !important;
+    text-decoration: none !important;
+    opacity: 1 !important;
+}
+
+/* ============================================
+   단락
+   ============================================ */
+#paige-page-content p {
+    margin-bottom: 1.25rem !important;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* 첫 글자 들여쓰기 (문학적 느낌, 선택사항) */
+/*
+#paige-page-content > p {
+    text-indent: 1rem;
+}
+*/
+
+/* ============================================
+   링크
+   ============================================ */
+#paige-page-content a {
+    color: #1a202c !important;
+    text-decoration: underline !important;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    transition: opacity 0.2s ease;
+}
+
+#paige-page-content a:hover {
+    opacity: 0.65;
+}
+
+/* ============================================
+   강조
+   ============================================ */
+#paige-page-content strong,
+#paige-page-content b {
+    color: #1a202c !important;
+    font-weight: 700 !important;
+}
+
+#paige-page-content em,
+#paige-page-content i {
+    color: #2d3748 !important;
+    font-style: italic !important;
+}
+
+/* ============================================
+   인용구 (문학적 강조)
+   ============================================ */
+#paige-page-content blockquote {
+    padding: 0.75rem 1.5rem !important;
+    margin: 2rem 0 !important;
+    color: #4a5568 !important;
+    font-style: italic;
+    background-color: #fdf8f8;
+    border-radius: 0 4px 4px 0;
+}
+
+#paige-page-content blockquote p {
+    margin-bottom: 0.5rem !important;
+}
+
+#paige-page-content blockquote p:last-child {
+    margin-bottom: 0 !important;
+}
+
+/* ============================================
+   리스트
+   ============================================ */
+#paige-page-content ul,
+#paige-page-content ol {
+    margin-top: 1rem !important;
+    margin-bottom: 1.25rem !important;
+    padding-left: 1.75rem !important;
+}
+
+#paige-page-content li {
+    margin-bottom: 0.4rem !important;
+    line-height: 1.8;
+}
+
+#paige-page-content li::marker {
+    color: hsl(0, 96%, 49%);
+}
+
+/* 중첩 리스트 여백 축소 */
+#paige-page-content li > ul,
+#paige-page-content li > ol {
+    margin-top: 0.4rem !important;
+    margin-bottom: 0.4rem !important;
+}
+
+/* ============================================
+   인라인 코드 / 코드 블록
+   ============================================ */
+#paige-page-content code {
+    font-family: 'JetBrains Mono', 'D2Coding', 'Consolas', monospace !important;
+    background-color: #f7fafc !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 4px !important;
+    padding: 0.15rem 0.4rem !important;
+    font-size: 0.9em !important;
+    color: #c53030 !important;
+}
+
+#paige-page-content pre {
+    background-color: #1a202c !important;
+    border-radius: 8px !important;
+    padding: 1.25rem !important;
+    overflow-x: auto;
+    margin: 1.5rem 0 !important;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+#paige-page-content pre code {
+    background-color: transparent !important;
+    border: none !important;
+    color: #e2e8f0 !important;
+    padding: 0 !important;
+    font-size: inherit !important;
+}
+
+/* ============================================
+   수평선
+   ============================================ */
+#paige-page-content hr {
+    border: none !important;
+    border-top: 1px solid #cbd5e0 !important;
+    margin: 3rem auto !important;
+    width: 50%;
+}
+
+/* 장 구분선 스타일 (꽃무늬 등 장식 원한다면) */
+/*
+#paige-page-content hr::before {
+    content: "❦";
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    color: hsl(0, 96%, 49%);
+    margin-top: -1em;
+    background: white;
+    width: 2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+*/
+
+/* ============================================
+   이미지
+   ============================================ */
+#paige-page-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    margin: 2rem auto;
+    display: block;
+}
+
+/* Figure (이미지 + 캡션) */
+#paige-page-content figure {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+#paige-page-content figcaption {
+    font-size: 0.9rem;
+    color: #718096;
+    margin-top: 0.75rem;
+    font-style: italic;
+}
+
+/* ============================================
+   테이블
+   ============================================ */
+#paige-page-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.75rem 0;
+    font-size: 0.95rem;
+}
+
+#paige-page-content thead {
+    background-color: #f7fafc;
+    border-top: 2px solid #2d3748;
+}
+
+#paige-page-content th {
+    padding: 0.75rem 1rem;
+    font-weight: 700;
+    text-align: left;
+    color: #1a202c;
+}
+
+#paige-page-content td {
+    padding: 0.75rem 1rem;
+}
+
+#paige-page-content tr:hover {
+    background-color: #fafbfc;
+}
+
+/* ============================================
+   각주 (Hugo Goldmark)
+   ============================================ */
+#paige-page-content .footnotes {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #cbd5e0;
+    font-size: 0.9rem;
+    color: #718096;
+}
+
+#paige-page-content .footnotes hr {
+    display: none;
+}
+
+#paige-page-content sup a {
+    text-decoration: none !important;
+    font-weight: 700;
+}
+
+/* ============================================
+   선택 영역 색상
+   ============================================ */
+#paige-page-content ::selection {
+    background-color: hsl(0, 96%, 49%, 0.2);
+    color: #1a202c;
 }
 
 </style>

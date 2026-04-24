@@ -28,6 +28,9 @@
 {{/* 짧은 설명: 커스텀 프론트매터 */}}
 {{ $shortDesc := $item.Params.short_description }}
 
+{{/* 출간 예정일: 커스텀 프론트매터 */}}
+{{ $publishDate := $item.Params.publish_date }}
+
 {{ if $draft }}
     {{ $flags = $flags | append "paige-status-draft" "paige-status-unpublished" }}
 {{ end }}
@@ -124,6 +127,12 @@
                     <time class="paige-page-date" datetime="{{ .Format `2006-01-02` }}">
                         {{ time.Format $format . }}
                     </time>
+                {{ end }}
+
+                {{ with $publishDate }}
+                    <span class="paige-page-publish-date">
+                        출간 예정일: <time datetime="{{ time.Format `2006-01-02` . }}">{{ time.Format "2006년 1월 2일" . }}</time>
+                    </span>
                 {{ end }}
             </div>
             

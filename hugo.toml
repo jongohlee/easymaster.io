@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://easymaster.io/"
 enablerobotstxt = true
 timezone = "Asia/Seoul"
 titlecasestyle = "firstupper"
