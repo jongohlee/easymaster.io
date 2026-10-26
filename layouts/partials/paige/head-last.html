@@ -44,6 +44,18 @@
     font-family: 'Noto Sans KR', sans-serif !important;
 }
 
+#paige-site-menu .nav-link {
+    color: #81a1c1 !important;
+}
+
+#paige-site-menu .nav-link:hover {
+    color: #88c0d0 !important;
+}
+
+#paige-site-menu .nav-link.active {
+    color: #5e81ac !important;
+}
+
 #paige-site-menu .nav-item:has(a[href="/categories/"]) {
     display: none !important;
 }
@@ -54,6 +66,12 @@
 
 #paige-page-header {
     text-align: left !important;
+}
+
+/* 상세 페이지 제목 폭을 본문과 맞춤 */
+#paige-page.paige-kind-page #paige-page-header {
+    width: 100%;
+    max-width: 42rem !important;
 }
 
 #paige-page-title {
@@ -150,7 +168,8 @@ html, body {
     font-size: 1.05rem !important;
     line-height: 1.9 !important;
     color: #2d3748 !important;
-    max-width: 42rem;
+    width: 100%;
+    max-width: 42rem !important;  /* 테마의 .mw-100(!important) 덮어쓰기 */
     margin: 0 auto;
     padding: 0 1rem;
     padding-bottom: 4rem !important;

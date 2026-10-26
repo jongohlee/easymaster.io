@@ -29,10 +29,10 @@ name = "홈"
 url = "/"
 weight = 10
 
-[[menu.main]]
-name = "출간도서"
-url = "/books/"
-weight = 20
+#[[menu.main]]
+#name = "출간도서"
+#url = "/books/"
+#weight = 20
 
 [[menu.main]]
 name = "출간예정"

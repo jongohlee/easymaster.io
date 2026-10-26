@@ -19,10 +19,10 @@
 {{ $tags := $item.GetTerms "tags" }}
 {{ $title := $item.LinkTitle | markdownify | plainify | htmlUnescape | and ($list.Param "paige.subpages.disable_title" | not) }}
 
-{{/* 페이지 번들의 썸네일 이미지 */}}
+{{/* 페이지 번들의 썸네일 이미지 (파일명에 해시를 붙여 교체 시 브라우저 캐시 회피) */}}
 {{ $thumbnail := false }}
-{{ with $item.Resources.GetMatch "thumbnail*" }}
-    {{ $thumbnail = . }}
+{{ with $item.Resources.GetMatch "thumbnail.*" }}
+    {{ $thumbnail = . | fingerprint "md5" }}
 {{ end }}
 
 {{/* 짧은 설명: 커스텀 프론트매터 */}}
