@@ -160,12 +160,23 @@ html, body {
     text-align: left !important;
 }
 
+/* 목록 썸네일: 데스크톱 15%, 모바일은 화면 절반 */
+.paige-custom-thumb {
+    width: 15%;
+}
+
+@media (max-width: 767.98px) {
+    .paige-custom-thumb {
+        width: 50%;
+    }
+}
+
 /* ============================================
    본문 컨테이너 전체 설정
    ============================================ */
 #paige-page-content {
     font-family: 'RIDIBatang', 'Nanum Myeongjo', 'Noto Serif KR', 'Apple SD Gothic Neo', 'Malgun Gothic', serif;
-    font-size: 1.05rem !important;
+    font-size: 1.125rem !important;
     line-height: 1.9 !important;
     color: #2d3748 !important;
     width: 100%;
@@ -228,7 +239,7 @@ html, body {
 }
 
 #paige-page-content h4 {
-    font-size: 1.1rem !important;
+    font-size: 1.15rem !important;
     margin-top: 1.75rem !important;
     margin-bottom: 0.5rem !important;
     color: #4a5568 !important;
@@ -266,6 +277,7 @@ html, body {
     margin-bottom: 1.25rem !important;
     text-align: justify;
     text-justify: inter-word;
+    word-break: normal;  /* 양쪽 정렬 시 공백 고르게: 글자 단위 줄바꿈 */
 }
 
 /* 첫 글자 들여쓰기 (문학적 느낌, 선택사항) */

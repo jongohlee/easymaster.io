@@ -44,6 +44,11 @@ name = "소개"
 url = "/about/"
 weight = 40
 
+[[menu.main]]
+name = "출간일지"
+url = "/journal/"
+weight = 50
+
 [outputs]
 home = ["html"]
 

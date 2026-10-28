@@ -1,8 +1,8 @@
 ---
 title: "포스트드라마 연극"
 short_description: "Hans-Thies Lehmann의 현대 연극에 대한 본질적인 연구 집대성"
-description: "한국 연극·공연예술 담론의 지형을 바꾼 단 한 권의 책, 다시 돌아오다. 2027년 8월 개정판 출간 예정."
-publish_date: 2027-08-01
+description: "한국 연극·공연예술 담론의 지형을 바꾼 단 한 권의 책, 다시 돌아오다. 2027년 12월 개정판 출간 예정."
+publish_date: 2027-12-01
 series: ["문화/예술"]
 authors: ["한스-티즈 레만"]
 ---
