@@ -1,4 +1,5 @@
 +++
+description = "시대를 읽는 지식, 경계를 넘는 목소리. 이지마스터는 아프리카 현대문학과 기술, 역사·철학의 책을 펴내는 서울의 독립 출판사입니다."
 keywords = []
 [paige.pages]
 disable_collections = true

@@ -1,4 +1,6 @@
 baseurl = "https://easymaster.io/"
+disableKinds = ["taxonomy", "term"]
+enableGitInfo = true
 enablerobotstxt = true
 timezone = "Asia/Seoul"
 titlecasestyle = "firstupper"
@@ -50,10 +52,13 @@ url = "/journal/"
 weight = 50
 
 [outputs]
-home = ["html"]
+home = ["html", "rss"]
 
 [pagination]
 pagersize = 10
+
+[params]
+images = ["web-app-manifest-512x512.png"]
 
 [params.paige.site]
 disable_breadcrumbs = true
