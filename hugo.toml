@@ -1,4 +1,4 @@
-baseurl = "https://easymaster.io/"
+baseurl = "https://www.easymaster.io/"
 disableKinds = ["taxonomy", "term"]
 enableGitInfo = true
 enablerobotstxt = true
