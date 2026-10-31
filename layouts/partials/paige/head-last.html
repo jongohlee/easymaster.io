@@ -25,10 +25,17 @@
 #paige-site-title,
 #paige-site-title a {
     font-family: 'Noto Sans KR', sans-serif !important;
-    font-size: 2.5rem !important;
+    font-size: 2.0rem !important;
     font-weight: 700 !important;
     color: #3b4252 !important;
     text-align: left !important;
+}
+
+/* 사이트 제목 대신 로고 이미지 표시 */
+#paige-site-logo {
+    height: 1.5rem;
+    width: auto;
+    vertical-align: middle;
 }
 
 #paige-site-description {
@@ -43,6 +50,58 @@
     margin-top: 0.5rem !important;
     margin-right: calc(-.5 * var(--bs-gutter-x));
     margin-left: calc(.5 * var(--bs-gutter-x));
+}
+
+/* 로고와 탭 메뉴를 한 줄에 배치 */
+#paige-site-topbar #paige-site-title,
+#paige-site-topbar #paige-site-menu {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/* 홈: 스플래시 이미지 왼쪽의 설명 문구 (기존 1.1rem의 3배) */
+/* 홈: 본문 폭 제한(42rem 가운데 정렬)을 풀어 스플래시 영역을 왼쪽 정렬 */
+#paige-page.paige-kind-home #paige-page-content {
+    max-width: 100% !important;
+}
+
+/* 홈: 설명 문구 칸은 가로 1/5 (Bootstrap 12칸 그리드에는 1/5이 없어 직접 지정) */
+@media (min-width: 768px) {
+    .home-splash-side {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+/* 홈: 스플래시 아래 소개 문단 행간 (본문 기본 1.9보다 좁게) */
+#home-intro p {
+    line-height: 1.5 !important;
+}
+
+/* 홈: 스플래시와 소개 글 사이 간격은 #home-intro의 margin-top만으로 조정
+   (본문 h1의 margin-top 3rem, 이미지 shortcode의 아래 여백 제거) */
+#paige-page-content #home-intro h1 {
+    margin-top: 0 !important;
+}
+
+#home-splash,
+#home-splash .paige-shortcode-image {
+    margin-bottom: 0 !important;
+}
+
+/* 본문 이미지 공통 여백(위아래 2rem)을 스플래시에서는 제거 */
+#home-splash img {
+    margin: 0 !important;
+}
+
+#home-splash-description {
+    text-align: left;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 3.3rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #3b4252;
+    word-break: keep-all;
 }
 
 #paige-site-menu .nav {
@@ -82,7 +141,7 @@
 
 #paige-page-title {
     font-family: 'Noto Sans KR', serif !important;
-    font-size: 2.4rem !important;
+    font-size: 1.6rem !important;
     font-weight: 700 !important;
     text-align: left !important;
     padding-left: 1rem !important;
@@ -111,20 +170,21 @@ html, body {
 
 #paige-site-footer {
     margin-top: auto !important;
-    background-color: #3b4252 !important;
-    border-top: 3px solid #4c566a !important;
+    background-color: #ffffff !important;
+    border: none !important;
     padding: 0.4rem 0.2rem 0.2rem 1.2rem !important;
     margin-left: -0.25rem !important;
     margin-right: -0.25rem !important;
 }
 
+/* 흰 배경에 맞춰 글자색을 어둡게 */
 #paige-site-footer p,
 #paige-site-footer a {
-    color: #d8dee9 !important;
+    color: #4c566a !important;
 }
 
 #paige-site-footer a:hover {
-    color: #eceff4 !important;
+    color: #2e3440 !important;
     text-decoration: underline !important;
 }
 

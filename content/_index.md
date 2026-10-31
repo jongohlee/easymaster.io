@@ -11,19 +11,25 @@ disable_sections = true
 -->
 <!-- ![로고](/images/splash.webp) -->
 
+<div class="align-items-center mt-3 row" id="home-splash">
+    <div class="col-12 home-splash-side">
+        <p class="mb-3 mb-md-0" id="home-splash-description">책<br>만드는<br>사람들</p>
+    </div>
+    <div class="col">
 {{< paige/image alt="Landscape" breakpoints=true 
-    class="mt-3 object-fit-cover rounded-4 shadow" 
+    class="object-fit-cover rounded-4 shadow" 
     fetchpriority="high" height="20rem" loading="eager" 
     src="images/splash.webp" width="100%" >}}
+    </div>
+</div>
 
-<h1 class="fw-bold h2 text-center font-ridibatang" style="margin-top: 4rem">시대를 읽는 지식, 경계를 넘는 목소리</h1>
-
-<div class="container-fluid">
-    <div class="justify-content-center row">
-        <div class="col col-auto col-lg-8 px-0">
-            <p class="lead mb-0 text-center font-ridibatang" style="font-size: 1.1rem !important;">
-            세상은 저절로 보이지 않습니다. 누군가 오래 바라보고 글로 옮겨 놓아야 비로소 윤곽이 드러납니다. 이지마스터는 그 윤곽을 드러내는 책을 냅니다. 
-            아프리카의 젊은 문장에서, 기술이 만드는 세계의 이면에서, 그리고 언젠가는 역사와 철학의 자리에서.</p>
-        </div>
+<div class="row" id="home-intro" style="margin-top: 2rem">
+    <div class="col-12 d-none d-md-block home-splash-side"></div>
+    <div class="col">
+        <h1 class="fw-bold h2 font-ridibatang mt-0 text-start">시대를 읽는 지식, 경계를 넘는 목소리</h1>
+        <p class="lead mb-0 font-ridibatang text-start" style="font-size: 1.1rem !important;">
+        세상은 저절로 보이지 않습니다. 누군가 오래 바라보고 글로 옮겨 놓아야 비로소 윤곽이 드러납니다.<br>
+        이지마스터는 그 윤곽을 드러내는 책을 냅니다.<br>
+        세상과 공감하는 젊은 문장에서 그리고 역사와 철학의 자리에서.</p>
     </div>
 </div>

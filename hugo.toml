@@ -61,6 +61,7 @@ pagersize = 10
 images = ["web-app-manifest-512x512.png"]
 
 [params.paige.site]
+color_scheme = "light" # 모바일 다크 모드에서도 밝은 테마 유지
 disable_breadcrumbs = true
 disable_credit = true
 disable_menu = false
