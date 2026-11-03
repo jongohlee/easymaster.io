@@ -124,9 +124,11 @@ body {
     word-break: keep-all;
 }
 
-/* 홈: 새소식 제목은 본문 h1(1.8rem)보다 작게 */
-#paige-page-content #home-news h1 {
+/* 홈: 새소식 제목 (페이지당 H1은 하나만 두려고 h2로 작성, 여백은 이전 h1과 동일) */
+#paige-page-content #home-news h2 {
     font-size: 1.4rem !important;
+    margin-top: 3rem !important;
+    margin-bottom: 1.5rem !important;
 }
 
 /* 홈: 새소식 썸네일 (본문 이미지 공통 여백 제거) */
@@ -323,25 +325,28 @@ html, body {
     box-shadow: none !important;
 }
 
-#paige-page-content h1 {
+/* 마크다운 제목은 한 단계 내려 렌더링됨 (#→h2, ##→h3, ###→h4, ####→h5;
+   _markup/render-heading.html). 글자 크기는 마크다운 단계 기준 그대로 유지 */
+#paige-page-content h1,
+#paige-page-content h2 {
     font-size: 1.8rem !important;
     margin-top: 3rem !important;
     margin-bottom: 1.5rem !important;
 }
 
-#paige-page-content h2 {
+#paige-page-content h3 {
     font-size: 1.4rem !important;
     margin-top: 2.5rem !important;
     margin-bottom: 1rem !important;
 }
 
-#paige-page-content h3 {
+#paige-page-content h4 {
     font-size: 1.2rem !important;
     margin-top: 2rem !important;
     margin-bottom: 0.75rem !important;
 }
 
-#paige-page-content h4 {
+#paige-page-content h5 {
     font-size: 1.15rem !important;
     margin-top: 1.75rem !important;
     margin-bottom: 0.5rem !important;

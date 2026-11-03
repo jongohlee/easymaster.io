@@ -1,0 +1,7 @@
+{{/* 페이지 제목(#paige-page-title)만 H1이 되도록 본문 마크다운 제목은 한 단계 내려 렌더링 (#→h2 … 최대 h6) */}}
+{{ $level := add .Level 1 | math.Min 6 | int }}
+{{ $attrs := merge .Attributes (dict "id" .Anchor) }}
+
+<h{{ $level }} {{ range $k, $v := $attrs }} {{ printf `%s="%s"` $k $v | safeHTMLAttr }} {{ end }}>
+    <a href="#{{ .Anchor }}" style="color: rgba(var(--bs-body-color-rgb), var(--bs-text-opacity)); text-decoration: none">{{ .Text }}</a>
+</h{{ $level }}>

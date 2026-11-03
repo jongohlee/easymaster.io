@@ -64,6 +64,7 @@ images = ["web-app-manifest-512x512.png"]
 color_scheme = "light" # 모바일 다크 모드에서도 밝은 테마 유지
 disable_breadcrumbs = true
 disable_credit = true
+external_link_new_tab = true # 외부 사이트 링크(텀블벅 등)는 새 창으로 열기
 disable_menu = false
 disable_description = false
 
