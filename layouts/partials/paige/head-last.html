@@ -138,6 +138,19 @@ body {
     margin: 0 !important;
 }
 
+/* 책 소개: 표지 이미지를 본문 오른쪽에 작게 띄우고 글이 왼쪽으로 감싸 흐르게 함 */
+#paige-page-content img.book-cover-float {
+    float: right;
+    width: 36.72%;
+    max-width: 14.69rem;
+    height: auto;
+    /* 위 여백 0.45rem: 왼쪽 문단 첫 줄 글자 윗선에 표지 윗변을 맞춤 (줄 간격의 위쪽 여유만큼) */
+    margin: 0.45rem 0 1rem 1.5rem !important;
+    /* 표지 PNG 바깥이 투명해 본문 이미지 공통 그림자가 사각 테두리처럼 보이므로 제거 */
+    border-radius: 0;
+    box-shadow: none;
+}
+
 /* 홈: '새소식' 라벨은 '책 만드는 사람들'의 절반 크기 */
 #home-news-label {
     font-size: 1.65rem;

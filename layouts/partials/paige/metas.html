@@ -31,5 +31,16 @@
 <meta content="#ffffff" name="theme-color">
 <meta content="width=device-width, initial-scale=1" name="viewport">
 
-{{ template "_internal/opengraph.html" $page }}
+{{ with $page.Params.book }}
+    {{/* 책 소개 페이지(머리말에 book 항목이 있는 페이지): og:type을 book으로 바꾸고 article:* 대신 book:* 속성을 넣음 */}}
+    {{ $og := partial "opengraph.html" $page }}
+    {{ $og = replaceRE `<meta property="og:type" content="article"\s*/?>` `<meta property="og:type" content="book">` $og }}
+    {{ $og = replaceRE `<meta property="article:[^>]*>\s*` "" $og }}
+    {{ $og | safeHTML }}
+    {{ with .author }}<meta content="{{ . }}" property="book:author">{{ end }}
+    {{ with .isbn }}<meta content="{{ . }}" property="book:isbn">{{ end }}
+    {{ with $page.Params.publish_date }}<meta content="{{ time.AsTime . | time.Format "2006-01-02" }}" property="book:release_date">{{ end }}
+{{ else }}
+    {{ template "_internal/opengraph.html" $page }}
+{{ end }}
 {{ template "_internal/twitter_cards.html" $page }}

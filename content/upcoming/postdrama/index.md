@@ -1,14 +1,21 @@
 ---
 date: 2026-04-23T11:12:13+00:00
-title: "포스트드라마 연극"
+title: "포스트드라마 연극 | 한스-티즈 레만"
 short_description: "Hans-Thies Lehmann의 현대 연극에 대한 본질적인 연구 집대성"
 description: "한국 연극·공연예술 담론의 지형을 바꾼 단 한 권의 책, 다시 돌아오다. 2027년 12월 개정판 출간 예정."
 publish_date: 2027-12-01
 series: ["문화/예술"]
 authors: ["한스-티즈 레만"]
+book:
+  name: "포스트드라마 연극"
+  alternate_name: "Postdramatisches Theater"
+  author: "한스-티즈 레만"
+  translator: "김기란"
+  publisher: "이지마스터"
+  in_language: "ko"
 ---
 
-# 한국 연극·공연예술 담론의 지형을 바꾼 단 한 권의 책, 다시 돌아오다
+## 한국 연극·공연예술 담론의 지형을 바꾼 단 한 권의 책, 다시 돌아오다
 
 2013년 한국어판이 출간된 이후 공연예술 연구자와 현장 실무자들의 필독서로 자리 잡았던 《포스트드라마 연극》이, 오랜 절판 상태를 딛고 개정판으로 독자들을 다시 찾아갑니다.
 

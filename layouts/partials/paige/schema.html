@@ -12,7 +12,54 @@
     <script type="application/ld+json">{{ merge $pageBase . | jsonify | safeJS }}</script>
 {{ end }}
 
-{{ if $auto }}
+{{/* 책 소개 페이지(머리말에 book 항목이 있는 페이지)는 Article 대신 schema.org Book을 출력 */}}
+{{ $book := $page.Params.book }}
+
+{{ with $book }}
+    {{ $schema := newScratch }}
+
+    {{ $schema.Set "@context" "https://schema.org" }}
+    {{ $schema.Set "@type" "Book" }}
+    {{ $schema.Set "url" $page.Permalink }}
+    {{ $schema.Set "name" .name }}
+    {{ $schema.Set "inLanguage" (.in_language | default site.Language.Locale) }}
+
+    {{ with .alternate_name }}
+        {{ $schema.Set "alternateName" . }}
+    {{ end }}
+
+    {{ with .author }}
+        {{ $schema.Set "author" (dict "@type" "Person" "name" .) }}
+    {{ end }}
+
+    {{ with .translator }}
+        {{ $schema.Set "translator" (dict "@type" "Person" "name" .) }}
+    {{ end }}
+
+    {{ with .publisher }}
+        {{ $schema.Set "publisher" (dict "@type" "Organization" "name" . "url" site.BaseURL) }}
+    {{ end }}
+
+    {{ with $page.Params.publish_date }}
+        {{ $schema.Set "datePublished" (time.AsTime . | time.Format "2006-01-02") }}
+    {{ end }}
+
+    {{ with .isbn }}
+        {{ $schema.Set "isbn" . }}
+    {{ end }}
+
+    {{ with $page.Description }}
+        {{ $schema.Set "description" (. | markdownify | plainify | htmlUnescape) }}
+    {{ end }}
+
+    {{ with $page.Resources.GetMatch "thumbnail.*" }}
+        {{ $schema.Set "image" .Permalink }}
+    {{ end }}
+
+    <script type="application/ld+json">{{ $schema.Values | jsonify | safeJS }}</script>
+{{ end }}
+
+{{ if and $auto (not $book) }}
     {{ $audio := $page.Params.audio | default slice }}
     {{ $authors := partial "paige/func-authors.html" $page }}
     {{ $copyright := site.Copyright | markdownify | plainify | htmlUnescape }}
