@@ -23,6 +23,13 @@ body {
     font-feature-settings: "halt";
 }
 
+/* 모바일: 기준 글자 크기를 16px → 13px로 줄여 rem 단위 글씨 전체를 함께 축소 */
+@media (max-width: 767.98px) {
+    html {
+        font-size: 81.25%;
+    }
+}
+
 .font-ridibatang {
     font-family: 'RIDIBatang', 'Nanum Myeongjo', 'Noto Serif KR', 'Apple SD Gothic Neo', 'Malgun Gothic', serif;
 }
@@ -154,6 +161,17 @@ body {
 /* 홈: '새소식' 라벨은 '책 만드는 사람들'의 절반 크기 */
 #home-news-label {
     font-size: 1.65rem;
+}
+
+/* 모바일 홈: '책 만드는 사람들'과 소개 제목을 더 작게 */
+@media (max-width: 767.98px) {
+    #home-splash-description {
+        font-size: 2.2rem;
+    }
+
+    #paige-page-content #home-intro h1 {
+        font-size: 1.4rem !important;
+    }
 }
 
 #paige-site-menu .nav {
