@@ -39,11 +39,11 @@ disable_sections = true
         <p class="mb-3 mb-md-0" id="home-news-label">새소식</p>
     </div>
     <div class="col">
-        <h2 class="fw-bold h2 font-ridibatang mt-0 text-start">《은조마네의 구구도생》 <a href="https://tumblbug.com/dogeatdog" target="_blank">텀블벅 프로젝트</a> 공개예정</h2>
+        <h2 class="fw-bold h2 font-ridibatang mt-0 text-start">《은조마네의 구구도생》 <a href="https://tumblbug.com/dogeatdog" target="_blank">텀블벅 프로젝트</a> 공개</h2>
         <div class="align-items-start d-flex gap-4">
             <a class="flex-shrink-0" href="/upcoming/dog_eat_dog/"><img alt="은조마네의 구구도생 표지" id="home-news-thumb" src="/upcoming/dog_eat_dog/thumbnail.jpg"></a>
             <p class="lead mb-0 font-ridibatang text-start" style="font-size: 1.1rem !important;">
-            이지마스터의 첫 번째 책 제작을 위한 <a href="https://tumblbug.com/dogeatdog" target="_blank">텀블벅 펀딩 프로젝트</a>가 공개될 예정입니다. 링크를 통해 펀딩 후원을 위한 프로젝트 시작 알림을 예약할 수 있습니다.</p>
+            이지마스터의 첫 번째 책 제작을 위한 <a href="https://tumblbug.com/dogeatdog" target="_blank">텀블벅 펀딩 프로젝트</a>가 시작되었습니다. 링크를 통해 펀딩 후원을 위한 프로젝트에 참여할 수 있습니다.</p>
         </div>
     </div>
 </div>
