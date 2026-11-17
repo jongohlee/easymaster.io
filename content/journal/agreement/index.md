@@ -71,6 +71,6 @@ weight: 21
 
 안 해 본 일도 일단 부딪쳐 보면 길이 열리고, 순서가 잘못되었더라도 먼저 나간 걸음이 뒤처진 발을 재촉한다.
 
-[이지마스터의 첫 책 《은조마네의 구구도생》은 12월 28일 출간된다.](https://www.easymaster.io/upcoming/dog_eat_dog/)
+[이지마스터의 첫 책 《은조마네의 구구도생》은 12월 18일 출간된다.](https://www.easymaster.io/upcoming/dog_eat_dog/)
 
 다음에는 번역과 출간을 위한 준비 과정을 정리합니다.
